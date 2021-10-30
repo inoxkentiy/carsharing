@@ -2,7 +2,7 @@ body {
     background-image : url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/cc830f53315857.593f0b14abf2d.jpg);
     font-family      : 'Press Start 2P';
     background-repeat: no-repeat;
-    font-size: 14px;
+    font-size        : 14px;
 }
 
 header {
@@ -38,8 +38,8 @@ header {
 }
 
 .menu li {
-    display  : inline;
-    padding  : 3px;
+    display: inline;
+    padding: 3px;
 }
 
 #logo {
@@ -47,8 +47,12 @@ header {
 }
 
 article {
-    color     : white;
-    text-align: center;
+    color      : white;
+    text-align : center;
+    width      : 90%;
+    margin-left: 5%;
+margin-top: 50px;
+    margin-right: 5%;
 }
 
 * {
@@ -75,12 +79,32 @@ input[type=password]:focus {
     outline         : none;
 }
 
+.container h4 {
+    color         : black;
+    overflow      : hidden;
+    border-right  : .17em solid #e29508;
+    white-space   : nowrap;
+    margin        : 0 auto;
+    letter-spacing: .17em;
+    animation     :
+        typing 5s steps(30, end),
+        blink-caret .7s step-end infinite;
+
+}
+
 hr {
     border       : 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
 
-.registerbtn {
+.container ::placeholder {
+    font-family: 'Press Start 2P';
+    color: rgb(233, 222, 222);
+}
+
+.btn {
+    
+    font-family: 'Press Start 2P';
     background-color: black;
     color           : white;
     padding         : 16px 20px;
@@ -93,4 +117,26 @@ hr {
 
 .registerbtn:hover {
     opacity: 1;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    40% {
+        border-color: orange
+    }
 }
