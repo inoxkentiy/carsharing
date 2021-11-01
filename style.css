@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/2c/b4/96/2cb49653c4594a4cc6b4a949ae2c4415.gif);
+    background-image: url(https://i.pinimg.com/originals/e1/57/4f/e1574f2ba63199c3f3f941261fdf7f91.gif);
     font-family: 'Press Start 2P';
     background-color: rgb(54, 1, 54);
     background-repeat: no-repeat;
@@ -147,7 +147,16 @@ hr {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 14px;
     overflow: hidden;
     transition: 0.5s all;
+}
+
+.card img {
+    height: 150px;
+    width: 250px;
+}
+
+#hehe {
+    color: rgb(56, 3, 3);
 }
