@@ -8,13 +8,13 @@ for (let i = 0; i < 1; i++) {
 }
 
 function app() {
-    const buttons = document.querySelectorAll('.buttn')
-    const cards = document.querySelectorAll('.containersec')
+    let buttons = document.querySelectorAll('.buttn')
+    let cards = document.querySelectorAll('.containersec')
 
     function filter(category, items) {
         items.forEach((item) => {
-            const isItemFiltered = !item.classList.contains(category)
-            const isShowAll = category.toLowerCase() === 'all'
+            let isItemFiltered = !item.classList.contains(category)
+            let isShowAll = category.toLowerCase() === 'all'
             if (isItemFiltered && !isShowAll) {
                 item.classList.add('anime')
             } else {
@@ -26,7 +26,7 @@ function app() {
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            const currentCategory = button.dataset.filter
+            let currentCategory = button.dataset.filter
             filter(currentCategory, cards)
         })
     })
