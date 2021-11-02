@@ -262,19 +262,23 @@ body {
 }
 
 .buttn_type_all {
-    background-color: blueviolet;
+    background-color: rgb(11, 11, 65);
 }
 
 .buttn_type_toyota {
-    background-color: blueviolet;
+    background-color: rgb(11, 11, 65);
 }
 
 .buttn_type_honda {
-    background-color: blueviolet;
+    background-color: rgb(11, 11, 65);
+}
+
+.buttn_type_ford {
+    background-color: rgb(11, 11, 65);
 }
 
 .buttn_type_nissan {
-    background-color: blueviolet;
+    background-color: rgb(11, 11, 65);
 }
 
 .anime {
