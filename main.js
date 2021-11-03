@@ -1,4 +1,5 @@
 let hey = document.querySelector("#welcome");
+let deleteButton = document.querySelector("#delete");
 let login = (localStorage.getItem("name"));
 let password = (localStorage.getItem("password"));
 
@@ -71,3 +72,6 @@ function addToCart(name, price) {
     localStorage.setItem("cartArray", JSON.stringify(cartArray));
     console.log(cartArray)
 }
+deleteButton.addEventListener('click', function () {
+    window.location.href = "lastpage.html"
+})
