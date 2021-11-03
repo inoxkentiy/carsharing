@@ -41,3 +41,33 @@ function app() {
 }
 
 app()
+
+
+let divInfo = document.querySelectorAll("#containersec")
+console.log(divInfo)
+
+let ulList = document.querySelectorAll(".info")
+console.log(ulList)
+
+let buttons = document.querySelectorAll(".add")
+console.log(buttons)
+
+
+
+
+
+function addToCart(name, price) {
+    let car = {
+        name: name,
+        price: price
+    };
+
+    let cartArray = JSON.parse(localStorage.getItem("cartArray"))
+    if (cartArray === null) {
+        cartArray = [];
+    }
+
+    cartArray.push(car);
+    localStorage.setItem("cartArray", JSON.stringify(cartArray));
+    console.log(cartArray)
+}

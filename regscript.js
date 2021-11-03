@@ -11,13 +11,14 @@ btn.addEventListener('click', function (st) {
     if (email === "") {
         alert("Вы не ввели логин,ошибка")
     }
-        let Account={
-         name:email,
-          password:password}
+    let Account = {
+        name: email,
+        password: password
+    }
 
-     let arrayAccount=JSON.parse(localStorage.getItem("arrayAccount"));
-    if(arrayAccount===null){
-        arrayAccount=[];
+    let arrayAccount = JSON.parse(localStorage.getItem("arrayAccount"));
+    if (arrayAccount === null) {
+        arrayAccount = [];
     }
     arrayAccount.push(Account);
     localStorage.setItem("arrayAccount", JSON.stringify(arrayAccount));
@@ -32,9 +33,9 @@ stocks.addEventListener('click', function () {
     alert("Извините,но на данный момент никаких акционных предложений нет.")
 });
 
-    // Добавление 2-й кнопки.
-    let buttonSecond=document.querySelector("#btnSecond")
-    btnSecond.addEventListener('click', function (st) {
+// Добавление 2-й кнопки.
+let buttonSecond = document.querySelector("#btnSecond")
+btnSecond.addEventListener('click', function (st) {
     let emailSecond = document.querySelector("#emailInput2").value;
     let passwordSecond = document.querySelector("#passwordInput2").value;
     localStorage.setItem("name2", (emailSecond));
@@ -42,19 +43,18 @@ stocks.addEventListener('click', function () {
     //Если email - 0=>alert 
     if (emailSecond === "") {
         alert("Вы не ввели логин,ошибка")
-        location.href="registration.html"
+        location.href = "registration.html"
     }
-    if (emailSecond===localStorage.getItem("name") 
-    && passwordSecond===localStorage.getItem("password")
-    )
-     {
+    if (emailSecond === localStorage.getItem("name")
+        && passwordSecond === localStorage.getItem("password")
+    ) {
         console.log("Вы успешно вошли")
         alert("Вы успешно вошли")
     }
-    location.href="mainpage.html"
+    location.href = "mainpage.html"
 });
 
-let buttonDelete=document.querySelector("#delete")
-    buttonDelete.addEventListener('click',()=>{
-        localStorage.removeItem("arrayAccount");
-    })
+let buttonDelete = document.querySelector("#delete")
+buttonDelete.addEventListener('click', () => {
+    localStorage.removeItem("arrayAccount");
+})
