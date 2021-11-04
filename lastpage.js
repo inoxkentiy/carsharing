@@ -3,6 +3,15 @@ let cart = JSON.parse(localStorage.getItem("cartArray"))
 let clear = document.querySelector("#deletebtn");
 
 let ofor = document.querySelector("#oforbtn");
+let contacts = document.querySelector("#contacts");
+let stocks = document.querySelector("#stocks");
+contacts.addEventListener('click', function () {
+    alert("Здравствуйте,при возникновении каких-либо вопросов или предложений,пожалуйста,свяжитесь с нами по телефону: 88005553535")
+});
+
+stocks.addEventListener('click', function () {
+    alert("Извините,но на данный момент никаких акционных предложений нет.")
+});
 let sum = 0;
 console.log(cart)
 
