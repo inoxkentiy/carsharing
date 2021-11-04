@@ -1,4 +1,5 @@
 let hey = document.querySelector("#welcome");
+let deleteButton = document.querySelector("#delete");
 let login = (localStorage.getItem("name"));
 let password = (localStorage.getItem("password"));
 
@@ -41,3 +42,47 @@ function app() {
 }
 
 app()
+
+
+let divInfo = document.querySelectorAll("#containersec")
+console.log(divInfo)
+
+let ulList = document.querySelectorAll(".info")
+console.log(ulList)
+
+let buttons = document.querySelectorAll(".add")
+console.log(buttons)
+
+
+
+
+
+function addToCart(name, price) {
+    let car = {
+        name: name,
+        price: price
+    };
+
+    let cartArray = JSON.parse(localStorage.getItem("cartArray"))
+    if (cartArray === null) {
+        cartArray = [];
+    }
+
+    cartArray.push(car);
+    localStorage.setItem("cartArray", JSON.stringify(cartArray));
+    console.log(cartArray)
+}
+deleteButton.addEventListener('click', function () {
+    window.location.href = "lastpage.html"
+})
+
+
+let contacts = document.querySelector("#contacts");
+let stocks = document.querySelector("#stocks");
+contacts.addEventListener('click', function () {
+    alert("Здравствуйте,при возникновении каких-либо вопросов или предложений,пожалуйста,свяжитесь с нами по телефону: 88005553535")
+});
+
+stocks.addEventListener('click', function () {
+    alert("Извините,но на данный момент никаких акционных предложений нет.")
+});
