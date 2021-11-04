@@ -3,15 +3,6 @@ let cart = JSON.parse(localStorage.getItem("cartArray"))
 let clear = document.querySelector("#deletebtn");
 
 let ofor = document.querySelector("#oforbtn");
-let contacts = document.querySelector("#contacts");
-let stocks = document.querySelector("#stocks");
-contacts.addEventListener('click', function () {
-    alert("Здравствуйте,при возникновении каких-либо вопросов или предложений,пожалуйста,свяжитесь с нами по телефону: 88005553535")
-});
-
-stocks.addEventListener('click', function () {
-    alert("Извините,но на данный момент никаких акционных предложений нет.")
-});
 let sum = 0;
 console.log(cart)
 
@@ -45,4 +36,19 @@ listok.append(
                         id="service">Картой</a> или  <a target="blank" href="https://kaspi.kz/guide/ru/cash_credit/receive/"
                         id="service">наличными</a>? </p></div >`
 
+)
+
+listochek=$("#listochek")
+listochek.append(
+    `
+
+    Час <p id="red"> ${sum*1} KZT
+    6 Часов <p id="red"> ${sum*6} KZT
+    12 Часов <p id="red"> ${sum*12} KZT
+    24 Часа<p id="red"> ${sum*24}KZT
+    `
+    
+
+
+                   
 )
