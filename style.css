@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://c.tenor.com/6xehOZ4b4jYAAAAC/anime-road.gif);
+    background-image: url(https://64.media.tumblr.com/f48571425475466329776c1c535e9224/d124c6e245de8ca7-18/s1280x1920/137f6f20f1bb07608f338a9d857bdce65ece2848.gifv);
     font-family: 'Press Start 2P';
     background-repeat: no-repeat;
     background-size: cover;
@@ -348,4 +348,54 @@ body {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+}
+
+#otzyv {
+    border: 2px solid blue;
+    width: 80%;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+}
+
+#buttsn {
+    background-color: blue;
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#username {
+    width: 80%;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    display: inline-block;
+    border: none;
+    background: rgb(22, 20, 20);
+}
+
+#usertext {
+    width: 80%;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: rgb(22, 20, 20);
 }
