@@ -441,12 +441,45 @@ a:hover {
     text-align: center;
 }
 
-.info_block a{
+.info_block a {
     color: rgb(28, 28, 214);
 }
-.info_block a:hover{
+
+.info_block a:hover {
     color: rgb(68, 5, 68);
 }
-#red{
+
+#red {
     color: red;
+}
+
+.asd {
+    font-family: 'Press Start 2P';
+    background-color: black;
+    color: white;
+    padding: 16 px 20 px;
+    margin: 8 px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#refreshBlock {
+    padding-top: 20px;
+    background: black;
+    height: 10%;
+    width: 100%;
+}
+
+#refresh {
+    font-family: 'Press Start 2P';
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
